@@ -28,62 +28,92 @@
       </div>
     </nav>
     <!-- prima navbar con logo e tasto user e logout -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <form class="g-2" action="index.html" method="post"></form>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <!-- inserimento icona accanto la droplist -->
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <select
-          class="form-select-sm w-15 p-2"
-          aria-label=".form-select-sm example"
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <!-- button relativo al menu hamburger per visualizz da mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <option selected>Any Location</option>
-          <option value="1">Koh Panghan</option>
-          <option value="2">Koh Samui</option>
-          <option value="3">Bali</option>
-        </select>
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <select
-          class="form-select-sm w-15 p-2"
-          aria-label=".form-select-sm example"
-        >
-          <option selected>1 Room</option>
-          <option value="1">2 Rooms</option>
-          <option value="2">3 Rooms</option>
-          <option value="3">4 Rooms</option>
-          <option value="4">5 Rooms</option>
-        </select>
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <input
-          type="number"
-          class="form-control w-15"
-          placeholder="max price"
-          aria-label="Username"
-          aria-describedby="basic-addon1"
-        />
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <select
-          class="form-select-sm w-15 p-2"
-          aria-label=".form-select-sm example"
-        >
-          <option selected>Price (low to high)</option>
-          <option value="1">Price (high to low)</option>
-        </select>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="House Name..."
-          aria-label="Housename"
-          aria-describedby="basic-addon1"
-        />
-        <button class="btn btn-outline-success" type="submit">
-          Search
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+            </li>
+            <li class="nav-item">
+							<div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </li>
+						<li class="nav-item">
+							<div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </li>
+            <li class="nav-item">
+							<li class="nav-item">
+								<div class="input-group">
+	                <span class="input-group-text" id="basic-addon1">@</span>
+	                <input
+	                  type="text"
+	                  class="form-control"
+	                  placeholder="Username"
+	                  aria-label="Username"
+	                  aria-describedby="basic-addon1"
+	                />
+	              </div>
+	            </li>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
     </nav>
     <!-- griglia con le card relative alle case -->
     <div class="container">
-      <div class="row row-cols-4">
+      <div class="row row-cols-4 gy-4">
         <div class="col">
           <!-- singola card casa -->
           <div class="card">
@@ -96,7 +126,8 @@
               <h6 class="card-subtitle mb-2 text-muted">Koh Samui • 4 Rooms</h6>
               <h5 class="card-title">Luxury Villa in Chaweng</h5>
               <p class="card-text">
-                testo TBD
+                <span>3 reviews</span>
+                <span>$350/night</span>
               </p>
             </div>
           </div>
@@ -114,7 +145,8 @@
               </h6>
               <h5 class="card-title">Private Villa Lotus 1</h5>
               <p class="card-text">
-                Testo TBD
+                <span>1 reviews</span>
+                <span>$150/night</span>
               </p>
             </div>
           </div>
@@ -130,7 +162,8 @@
               <h6 class="card-subtitle mb-2 text-muted">Bali • 3 Rooms</h6>
               <h5 class="card-title">Seminyak KuDeTa Beach</h5>
               <p class="card-text">
-                Testo TBD
+                <span>2 reviews</span>
+                <span>$120/night</span>
               </p>
             </div>
           </div>
@@ -146,7 +179,8 @@
               <h6 class="card-subtitle mb-2 text-muted">Bali • 5 Rooms</h6>
               <h5 class="card-title">5 Bed Villa Canggu</h5>
               <p class="card-text">
-                Testo TBD
+                <span>1 reviews</span>
+                <span>$250/night</span>
               </p>
             </div>
           </div>
@@ -164,7 +198,8 @@
               </h6>
               <h5 class="card-title">Archie Village House</h5>
               <p class="card-text">
-                Testo TBD
+                <span>1 reviews</span>
+                <span>$80/night</span>
               </p>
             </div>
           </div>
@@ -182,7 +217,8 @@
               </h6>
               <h5 class="card-title">Luxury 6 Bed Villa</h5>
               <p class="card-text">
-                Testo TBD
+                <span>0 reviews</span>
+                <span>$150/night</span>
               </p>
             </div>
           </div>
@@ -200,7 +236,8 @@
               </h6>
               <h5 class="card-title">Narivana Koh Panghan</h5>
               <p class="card-text">
-                Testo TBD
+                <span>0 reviews</span>
+                <span>$100/night</span>
               </p>
             </div>
           </div>
