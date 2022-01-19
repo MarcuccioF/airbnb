@@ -75,10 +75,12 @@
               <div class="input-group">
                 <span class="input-group-text" id="basic-addon1">@</span>
                 <input
-                  type="text"
+                  type="number"
+                  min="0"
+                  max="5000"
                   class="form-control"
-                  placeholder="Username"
-                  aria-label="Username"
+                  placeholder="max price"
+                  aria-label="max price"
                   aria-describedby="basic-addon1"
                 />
               </div>
@@ -86,13 +88,10 @@
             <li class="nav-item me-4">
               <div class="input-group">
                 <span class="input-group-text" id="basic-addon1">@</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Username"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Price (low to high)</option>
+                  <option value="1">Price (high to low)</option>
+                </select>
               </div>
             </li>
           </ul>
@@ -100,7 +99,7 @@
             <input
               class="form-control me-4"
               type="search"
-              placeholder="Search"
+              placeholder="House name..."
               aria-label="Search"
             />
             <button class="btn btn-outline-success" type="submit">
