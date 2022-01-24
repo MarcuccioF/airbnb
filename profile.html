@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/4b96e00394.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -31,13 +32,67 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
-        <div class="col-4">
+      <div class="row gx-5">
+        <div class="col-sm-4">
           <h1>Profile</h1>
+          <form class="" action="index.html" method="post">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Marco Ferrera"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label"
+                >Email</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="marco@tortugacoders.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label"
+                >Profile Picture</label
+              ><br />
+              <img
+                src="https://randomuser.me/api/portraits/men/11.jpg"
+                alt="avatar image"
+                class="avatar-image rounded-circle"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="https://randomuser.me/api/portraits/me"
+              />
+            </div>
+            <a
+              href="#"
+              class="btn btn-secondary mb-3"
+              style="background-color: #008080"
+              >Save Changes</a
+            >
+          </form>
         </div>
 
-        <div class="col-8">
+        <div class="col-sm-8">
           <h1>My Listings</h1>
+          <form class="" action="index.html" method="post">
+            <a
+              href="#"
+              class="btn btn-secondary mb-3"
+              style="background-color: #008080"
+              >List a House</a
+            >
+          </form>
         </div>
       </div>
     </div>
